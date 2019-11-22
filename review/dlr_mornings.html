@@ -7,8 +7,8 @@
       Review Assignment
 
       DLR Morning Schedule
-      Author: 
-      Date:   
+      Author: Colby Abbott
+      Date:   11/21/19
 
       Filename:   dlr_mornings.html
 
@@ -17,8 +17,10 @@
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <title>DLR Morning Schedule</title>
-   <link href="dlr_reset2.css" rel="stylesheet" />
-   <link href="dlr_styles2.css" rel="stylesheet" />         
+   <link href="dlr_reset2.css" rel="stylesheet"/>
+   <link href="dlr_styles2.css" rel="stylesheet"/> 
+   <link href="dlr_tables2.css" rel="stylesheet"/>
+   <link href="dlr_columns2.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -41,7 +43,7 @@
    
    <div id="container">
    
-      <section id="main"> 
+        <section id="main"> 
          <img src="dlr_logo2.png" alt="DLR" />
          <h2>DLR Morning Schedule</h2>
          <p>DLR airs listener-supported public radio in Bismarck, North Dakota from 
@@ -49,7 +51,26 @@
             of our broadcast or download programs from our <a href="#">Podcast</a>. 
             <br />Please refer below for our current morning schedule.</p>
 
-      </section>
+            <table class="programs"/>
+                <caption>All Times Central</caption>
+                <colgroup>
+                    <col class="timeColumn"/>
+                    <col class="wDayColumns" span="5"/>
+                    <col class="wEndColumns" span="2"/>
+                </colgroup>
+                <thead>
+                    <tr>
+                       <th>Time</th> 
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td rowspan="8">Support Your Public Radio Station</td>
+                    </tr>
+                </tfoot>
+    
+    
+        </section>
       
    </div>
    
